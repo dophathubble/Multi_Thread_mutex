@@ -3,6 +3,7 @@
 int Buff1;
 pthread_mutex_t a_mutex;
 
+/*Create Thread 1 is a countup function and sent count value to Client*/
 void* Communication_1(void* abc)
 {   
     pthread_mutex_lock (&a_mutex);   
@@ -29,6 +30,7 @@ void* Communication_1(void* abc)
     printf ("\nThread 1 completed !\n");
 }
 
+/*Create Thread 1 is a countdown function and sent count value to Client */
 void* Communication_2(void* abc1)
 {      
     int client_sockfd= (int *)abc1;
