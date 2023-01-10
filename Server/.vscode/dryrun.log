@@ -1,0 +1,7 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/dongocphat/Training/06-01-2023/Makefile/Server'
+gcc -I./h/   -c -o cpp/Server_main.o cpp/Server_main.c
+gcc -I./h/   -c -o cpp/Server_func.o cpp/Server_func.c
+gcc -o Server cpp/Server_main.o cpp/Server_func.o -I./h/
+make: Leaving directory '/home/dongocphat/Training/06-01-2023/Makefile/Server'
+ 
