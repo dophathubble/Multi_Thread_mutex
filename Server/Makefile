@@ -1,7 +1,7 @@
 CC = gcc
-CFLAGS = -I./include/
+CFLAGS = -I./inc/
 DEPS = Server.h
-OBJ = source/Server.o
+OBJ = src/Server.o
 
 %o: %c $(DEPS)
 	$(CC) -c -o $@ $< $(CFLAGS)

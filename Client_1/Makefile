@@ -1,7 +1,7 @@
 CC = gcc
-CFLAGS = -I./include/
+CFLAGS = -I./inc/
 DEPS = Client_1.h
-OBJ = source/Client_main_1.o source/Client_func_1.o
+OBJ = src/Client_main_1.o src/Client_func_1.o
 
 %o: %c $(DEPS)
 	$(CC) -c -o $@ $< $(CFLAGS)
